@@ -1,4 +1,5 @@
 import {IGlobalState} from "../bll/state";
+import {initialState} from "../bll/counterReducer";
 
 
 export const saveToLS = (state: IGlobalState) => {
@@ -8,5 +9,10 @@ export const saveToLS = (state: IGlobalState) => {
 
 export const loadFromLS = () => {
     const stateFrom = localStorage.getItem('counter');
-    return stateFrom && JSON.parse(stateFrom)
+    if (stateFrom) {
+        return JSON.parse(stateFrom)
+    } else {
+        return initialState
+    }
+
 }

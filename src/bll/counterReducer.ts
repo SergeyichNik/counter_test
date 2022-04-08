@@ -20,7 +20,7 @@ export type InitialStateType = {
     isError: boolean,
 }
 
-const initialState: InitialStateType = {
+export const initialState: InitialStateType = {
     value: 0,
     minValue: 0,
     maxValue: 5,
