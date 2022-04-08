@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+.board {
+    width: 240px;
+    height: 430px;
+    margin: 100px auto;
+    padding: 10px;
+    background-color: #515566;
+    box-shadow: inset 2px 2px 15px #c0c1c4cb, 2px 2px 15px black;
+    border-radius: 120px 120px 60px 60px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: #515566;
+    border-radius: 100%;
+    box-shadow: 5px 5px 10px black;
+}
+
+.innerLayer {
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    background-color: #7f8082;
+    box-shadow: inset 2px 2px 5px black;
+
+}
+.outerLayer {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    border-radius: 100%;
+    box-shadow: -2px -2px 10px #c0c1c4cb,inset 1px 1px 2px #c0c1c4cb;
+}
+
+.btnWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    justify-content: space-between;
+    width: 200px;
+    height: 200px;
+}
+.mainLayerBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    box-shadow:inset 2px 2px 5px lightslategrey, 5px 5px 10px black;
+}
+.outerLayerBtn {
+    border-radius: 100%;
+    box-shadow: -5px -5px 10px #c0c1c4cb;
+}
+.innerLayerBtn {
+    width: 100%;
+    height: 100%;
+    box-shadow: inset  5px 5px 10px #515566 , 5px 5px 10px #515566;
+    border-radius: 100%;
+}
+.btnWrapper  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    transition: 0.5s all;
+    border-radius: 100%;
+    background-color: #0a6313ff;
+    box-shadow:inset -5px -5px 30px #f0e924;
+}
+
+.btnWrapper  button p{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 51px;
+    text-shadow:  1px 1px 1px #c0c1c4cb;
+    border-radius: 100%;
+    background-color: #515566;
+    box-shadow: inset 2px 2px 5px #c0c1c4cb, 2px 2px 5px black;
+}
+
+.btnWrapper  button:disabled {
+    background-color: #fc05059f;
+}
+
+
+.inputsWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.inputsWrapper input {
+    width: 50px;
+    height: 20px;
+    background-color: #c0c1c4cb;
+    box-shadow: inset 1px 1px 5px #fff, 1px 1px 5px black;
+    border-radius:  10px 10px;
+    text-shadow: 1px 1px 1px #818240;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.value {
+    font-size: 120px;
+    font-weight: 500;
+    line-height: 170px;
+    text-shadow: 2px 2px 4px black;
+}
